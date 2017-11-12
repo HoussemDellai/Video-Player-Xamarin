@@ -4,7 +4,7 @@
              xmlns:forms="clr-namespace:Plugin.MediaManager.Forms;assembly=Plugin.MediaManager.Forms"
              x:Class="VideoPlayerApp.MainPage">
 
-    <StackLayout Margin="20,120" Spacing="20">
+    <StackLayout Margin="20,20" Spacing="20">
 
         <Label Text="Xamarin.Forms" TextColor="DodgerBlue" FontSize="46"/>
         
