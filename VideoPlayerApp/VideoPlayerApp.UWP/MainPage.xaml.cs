@@ -12,6 +12,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Plugin.MediaManager.Forms.UWP;
 
 namespace VideoPlayerApp.UWP
 {
@@ -20,6 +21,8 @@ namespace VideoPlayerApp.UWP
         public MainPage()
         {
             this.InitializeComponent();
+
+            VideoViewRenderer.Init();
 
             LoadApplication(new VideoPlayerApp.App());
         }
