@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:forms="clr-namespace:Plugin.MediaManager.Forms;assembly=Plugin.MediaManager.Forms"
+             x:Class="VideoPlayerApp.MainPage">
+
+    <StackLayout Margin="20,120" Spacing="20">
+
+        <Label Text="Xamarin.Forms" TextColor="DodgerBlue" FontSize="46"/>
+        
+        <Label Text="Video Player" TextColor="DeepPink" FontSize="58"/>
+
+        <Entry x:Name="VideoEntry"
+               Text="https://sec.ch9.ms/ch9/37af/240037cc-e74a-421a-9946-7ce4205d37af/DiAndIocForXamarinForms.mp4" />
+
+        <Button x:Name="PlayPauseButton" 
+                Text="Play"
+                TextColor="White"
+                BackgroundColor="LightSeaGreen"
+                FontSize="50"
+                Clicked="PlayStop_Clicked" />
+
+        <forms:VideoView x:Name="MyVideoView"
+                         AspectMode="AspectFit"
+                         WidthRequest="320"
+                         HeightRequest="180"/>
+
+    </StackLayout>
+    
+</ContentPage>
